@@ -1,0 +1,168 @@
+<div>
+  <div class="background-image-mobile"></div>
+  <div class="cx cy py-1">
+    <div class="heading-text text-center">{{t.translate('Наши проекты')}}</div>
+  </div>
+  <div class="cx cy">
+    <img src="assets/down-arrow.svg" height="30">
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('87')" class="project-m">
+      <img class="project-thumb" [src]="projects[0].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[0].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[0].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('87')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('82')" class="project-m">
+      <img class="project-thumb" [src]="projects[1].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[1].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[1].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('82')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('63')" class="project-m">
+      <img class="project-thumb" [src]="projects[2].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[2].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[2].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('63')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('60')" class="project-m">
+      <img class="project-thumb" [src]="projects[3].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[3].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[3].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('60')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cx cy my-1">
+    <div (click)="openProject('48')" class="project-m">
+      <img class="project-thumb" [src]="projects[4].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[4].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[4].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('48')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('30')" class="project-m">
+      <img class="project-thumb" [src]="projects[5].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[5].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[5].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('30')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('24')" class="project-m">
+      <img class="project-thumb" [src]="projects[6].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[6].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[6].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('24')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('20')" class="project-m">
+      <img class="project-thumb" [src]="projects[7].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[7].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[7].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('20')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div (click)="openProject('15')" class="project-m">
+      <img class="project-thumb" [src]="projects[8].thumb" alt="Рыболовный траулер" title="Проектирование судов"/>
+      <div class="ship-name-m">
+        {{projects[8].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[8].description}}
+      </div>
+      <div class="cy pl-20 pt-20 pb-20">
+        <div class="button-m cx cy cursor-pointer" (click)="openProject('15')">{{t.translate('ПОДРОБНЕЕ...')}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="heading cx cy">
+    <div class="heading-text">{{t.translate('О Компании')}}</div>
+  </div>
+  <div class="color-line"></div>
+  <div class="cx cy mt-15 mb-3">
+    <div class="px-20">
+      <div class="content-m cy">
+        <div class="medium-text">
+          {{t.translate('Наутик Рус — это российская компания, выполняющая весь спектр проектирования рыболовных судов, от концептуального проекта до рабочей документации.')}}
+        </div>
+        <div class="medium-text">
+          {{t.translate('Компания использует инновационные технологии в проектировании рыболовных траулеров от своих зарубежных партнеров, опираясь на многолетний опыт российских морских инженеров.')}}
+        </div>
+        <div class="medium-text">
+          {{t.translate('Мы готовы предложить конкурентоспособное решение для любого рыбодобывающего проекта, как в России, так и за рубежом.')}}
+        </div>
+      </div>
+      <div class="cx cy">
+        <video class="interview" controls poster="assets/videoposter.jpg">
+          <source src="assets/interwiew.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div>
+  <div class="bottom-line"></div>
+  <div class="cx cy">
+    <iframe *ngIf="t.lang == 'RU'" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae20b5dc9f5bb93f03c2ff70bd1a8341efb00a357cf04e76b4ea66140297efd62&amp;source=constructor" width="100%" height="250" frameborder="0"></iframe>
+    <iframe *ngIf="t.lang == 'EN'" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae20b5dc9f5bb93f03c2ff70bd1a8341efb00a357cf04e76b4ea66140297efd62&amp;source=constructor&lang=en_US" width="100%" height="250" frameborder="0"></iframe>
+  </div>
+
+</div>

@@ -1,0 +1,98 @@
+.projects{
+  height: 57vh;
+  position: relative;
+  overflow: hidden;
+  min-height: 410px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 1600px) {
+  .projects {height: 65vh;}
+}
+.project{
+  box-shadow: 0px 2px 5px 0px rgba(34, 60, 80, 0.2);
+  width: 23%;
+  height: 95%;
+  overflow-y: hidden;
+  position: relative;
+  margin: 10px;
+  min-width: 290px;
+  padding-bottom: 10px;
+}
+.project-m{
+  box-shadow: 0px 2px 5px 0px rgba(34, 60, 80, 0.2);
+  width: 92%;
+  overflow-y: hidden;
+  position: relative;
+  padding-bottom: 10px;
+}
+.project-thumb{
+  width: 100%;
+}
+.project-video{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transition: 1s;
+  opacity: 1;
+}
+.project-video-m{
+  width: 100%;
+}
+.ship-name{
+  font-family: GoogleSans-Regular, serif;
+  font-size: 1.4rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #151515;
+}
+.ship-text{
+  font-family: GoogleSans-Regular, serif;
+  font-size: calc(0.87rem + 0.1vw);
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  margin-bottom: 1rem;
+  min-height: 40px;
+  color: #444;
+}
+
+.centered-project{
+  display: flex;
+  justify-content: center;
+}
+
+.right-project{
+  display: flex;
+  justify-content: flex-end;
+}
+.descr-head{
+  font-family: GoogleSans-Regular, serif;
+  font-size: calc(0.87rem + 0.1vw);
+  font-weight: bold;
+  padding-left: 20px;
+  color: #151515;
+}
+.descr-text{
+  font-family: GoogleSans-Regular, serif;
+  font-size: calc(0.87rem + 0.1vw);
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #444;
+}
+.all-descr{
+  margin-bottom: 20px;
+}
+.backdrop{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  z-index: 11;
+}

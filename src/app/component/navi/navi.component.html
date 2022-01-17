@@ -1,0 +1,26 @@
+<div class="header-m">
+  <div class="cy menu-m">
+    <div class="menu-icon-m" (click)="toggleMenu()">
+      <fa-icon class="fa-bars-icon" [icon]="faBars"></fa-icon>
+    </div>
+  </div>
+  <div class="menu-bar" [@openClose]="isOpen ? 'open' : 'closed'">
+    <div (click)="toggleMenu()" [routerLink]="['']"  class="text-navi padding cursor-pointer">{{t.translate('ГЛАВНАЯ')}}</div>
+    <div (click)="toggleMenu()" [routerLink]="['/projects']" class="text-navi padding cursor-pointer">{{t.translate('ПРОЕКТЫ')}}</div>
+    <div (click)="toggleMenu()" [routerLink]="['/design']" class="text-navi padding cursor-pointer">{{t.translate('ДИЗАЙН')}}</div>
+    <div (click)="toggleMenu()" [routerLink]="['/services']" class="text-navi padding cursor-pointer">{{t.translate('УСЛУГИ')}}</div>
+    <div (click)="toggleMenu()" [routerLink]="['/certs']" class="text-navi padding cursor-pointer">{{t.translate('СЕРТИФИКАТЫ')}}</div>
+    <div (click)="toggleMenu()" [routerLink]="['/contacts']" class="text-navi padding cursor-pointer">{{t.translate('КОНТАКТЫ')}}</div>
+    <div class="text-navi padding cursor-pointer" (click)="switchLang();">{{this.t.lang}}</div>
+    <div class="close-menu" (click)="toggleMenu()">
+      <fa-icon class="fa-times-icon" [icon]="faTimes"></fa-icon>
+    </div>
+  </div>
+  <div class="cy logo-m">
+    <a class="cy" routerLink="">
+      <img src="assets/nautic.png" height="40">
+    </a>
+  </div>
+
+  <div class="backdrop" *ngIf="isOpen" (click)="toggleMenu()"></div>
+</div>

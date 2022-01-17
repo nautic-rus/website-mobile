@@ -1,0 +1,118 @@
+ <div>
+  <div class="cx cy py-1">
+    <div class="heading-text">{{t.translate('Проекты')}}</div>
+  </div>
+  <div class="color-line"></div>
+  <div class="mini-heading pt-2 pb-2 px-2">{{t.translate('Эти суда спроектированы нашими партнёрами из Исландии')}}</div>
+  <div class="color-line"></div>
+  <div class="cx cy my-1">
+    <div class="project-m" >
+      <video [poster]="projects[9].thumb" controls loop playsinline class="project-video-m" [src]="projects[9].video"></video>
+      <div class="ship-name">
+        {{projects[9].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[9].description}}
+      </div>
+      <div class="all-descr">
+        <div class="descr-head">Main characteristic:</div>
+        <div class="descr-text">Lenght: 54.75 м</div>
+        <div class="descr-text">Moulded breadth: 13.5 м</div>
+        <div class="descr-text">GT Hold Capacity: 750 PCS / 460 L tubes</div>
+        <div class="descr-text">Engine: MAN 2040 kw</div>
+        <div class="descr-text">Bollard Pull: 47 ton</div>
+      </div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div class="project-m">
+      <video [poster]="projects[10].thumb" controls loop playsinline class="project-video-m" [src]="projects[10].video"></video>
+
+      <div class="ship-name">
+        {{projects[10].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[10].description}}
+      </div>
+      <div class="descr-head">Main characteristic:</div>
+      <div class="descr-text">Lenght: 62.54 m</div>
+      <div class="descr-text">Moulded breadth: 13.5 m</div>
+      <div class="descr-text">GT Hold Capacity: 750 PCS / 460 L tubes</div>
+      <div class="descr-text">Engine: Yanmar 1620 kw</div>
+      <div class="descr-text">Bollard Pull: 43 ton</div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div class="project-m">
+      <video [poster]="projects[11].thumb" controls loop playsinline class="project-video-m" [src]="projects[11].video"></video>
+
+      <div class="ship-name">
+        {{projects[11].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[11].description}}
+      </div>
+      <div class="descr-head">Main characteristic:</div>
+      <div class="descr-text">Lenght: 62.54 m</div>
+      <div class="descr-text">Moulded breadth: 13.5 m</div>
+      <div class="descr-text">GT Hold Capacity: 750 PCS / 460 L tubes</div>
+      <div class="descr-text">Engine: Yanmar 1620 kw</div>
+      <div class="descr-text">Bollard Pull: 43 ton</div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div class="project-m">
+      <video [poster]="projects[12].thumb" controls loop playsinline class="project-video-m" [src]="projects[12].video"></video>
+
+      <div class="ship-name">
+        {{projects[12].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[12].description}}
+      </div>
+      <div class="descr-head">Main characteristic:</div>
+      <div class="descr-text">Lenght: 62.54 m</div>
+      <div class="descr-text">Moulded breadth: 13.5 m</div>
+      <div class="descr-text">GT Hold Capacity: 750 PCS / 460 L tubes</div>
+      <div class="descr-text">Engine: Yanmar 1620 kw</div>
+      <div class="descr-text">Bollard Pull: 43 ton</div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div class="project-m">
+      <video [poster]="projects[13].thumb" controls loop playsinline class="project-video-m" [src]="projects[13].video"></video>
+
+      <div class="ship-name">
+        {{projects[13].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[13].description}}
+      </div>
+      <div class="descr-head">Main characteristic:</div>
+      <div class="descr-text">Lenght: 54.75 m</div>
+      <div class="descr-text">Moulded breadth: 13.5 m</div>
+      <div class="descr-text">GT Hold Capacity: 750 PCS / 460 L tubes</div>
+      <div class="descr-text">Engine: MAN 2040 kw</div>
+      <div class="descr-text">Bollard Pull: 47 ton</div>
+    </div>
+  </div>
+  <div class="cx cy my-1">
+    <div class="project-m">
+      <video [poster]="projects[14].thumb" controls loop playsinline class="project-video-m" [src]="projects[14].video"></video>
+
+      <div class="ship-name">
+        {{projects[14].name}}
+      </div>
+      <div class="ship-text">
+        {{projects[14].description}}
+      </div>
+      <div class="descr-head">Main characteristic:</div>
+      <div class="descr-text">Lenght: 54.75 m</div>
+      <div class="descr-text">Moulded breadth: 13.5 m</div>
+      <div class="descr-text">GT Hold Capacity: 750 PCS / 460 L tubes</div>
+      <div class="descr-text">Engine: MAN 2040 kw</div>
+      <div class="descr-text">Bollard Pull: 47 ton</div>
+    </div>
+  </div>
+  <div (click)="exitFullScreen()" class="backdrop" [@openCloseBackdrop]="fullScreen ? 'open' : 'closed'"></div>
+</div>

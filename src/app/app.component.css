@@ -1,0 +1,17 @@
+.app-header{
+  height: 76px;
+  min-height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.app-content{
+  min-height: calc(100vh - 132px - 76px);
+}
+.app-footer{
+  height: 132px;
+  min-height: 132px;
+}
+.min-width{
+  min-width: 800px;
+}

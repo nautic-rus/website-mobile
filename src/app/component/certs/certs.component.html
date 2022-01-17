@@ -1,0 +1,18 @@
+<div>
+  <div class="cx cy py-1">
+    <div class="heading-text">{{t.translate('Сертификаты')}}</div>
+  </div>
+  <div class="color-line"></div>
+  <div class="mini-heading pt-2 pb-2">{{t.translate('Сертификат РМРС')}}</div>
+  <div class="color-line"></div>
+  <div class="cx cy cert-m">
+    <div class="text-min">
+      {{t.translate('Свидетельство о соответствии предприятия. Документ, подтверждающий, что оказываемые предприятием услуги соответствуют требованиями Регистра Судоходства.')}}
+    </div>
+  </div>
+
+  <div class="cx cy">
+    <img class="cert-image" [src]="certUrl" (click)="open(certUrl)">
+  </div>
+
+</div>

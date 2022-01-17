@@ -1,0 +1,56 @@
+<div>
+  <div class="cx cy py-1">
+    <div class="heading-text">{{t.translate('Контакты')}}</div>
+  </div>
+  <div class="color-line"></div>
+  <div class="mini-text pt-2">+7 (812) 242-62-35</div>
+  <div class="mini-text">office@nautic-rus.ru</div>
+  <div class="mini-text pb-2">{{t.translate('Санкт-Петербург, ул. Кронштадтская, дом 9, корпус 4, стр 1, офис 303')}}</div>
+  <div class="color-line"></div>
+  <div class="mini-heading our-team">{{t.translate('Наша команда')}}</div>
+  <div class="filter-buttons-m cx cy">
+    <div class="filter-button-m" [class.select-filter]="selectedFilter == dep" *ngFor="let dep of departments" (click)="selectFilter(dep)">{{t.translate(dep).toUpperCase()}}</div>
+  </div>
+  <div class="contacts">
+    <div></div>
+    <div class="people cx cy">
+      <div class="human cy" *ngFor="let emp of getHeader()">
+        <div class="card-header cx cy">
+          {{emp.role}}
+        </div>
+        <div class="content">
+          <h1 class="name">
+            {{emp.name}}<br>{{emp.surname}}
+          </h1>
+          <img class="ava" [src]="emp.getImage()"/>
+        </div>
+        <div class="footer">
+          {{emp.email}}
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <div class="contacts">
+    <div></div>
+    <div class="people cx cy">
+      <div class="human cy" *ngFor="let emp of getPeople()">
+        <div class="card-header cx cy">
+          {{emp.role}}
+        </div>
+        <div class="content">
+          <h1 class="name">
+            {{emp.name}}<br>{{emp.surname}}
+          </h1>
+          <img class="ava" [src]="emp.getImage()"/>
+        </div>
+        <div class="footer">
+          {{emp.email}}
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <div class="bottom"></div>
+
+</div>

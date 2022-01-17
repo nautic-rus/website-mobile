@@ -1,0 +1,9 @@
+<div [hidden]="isHidden('birthday') || isHidden('newyear2022')" class="app-header">
+  <app-navi></app-navi>
+</div>
+<div class="app-content" [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+<div [hidden]="isHidden('birthday') || isHidden('newyear2022')" class="app-footer" [@footer]="prepareRoute(outlet)">
+  <app-footer></app-footer>
+</div>

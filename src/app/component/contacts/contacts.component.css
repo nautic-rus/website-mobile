@@ -1,0 +1,75 @@
+.contacts{
+  font-family: GoogleSans-Regular, serif;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+.people{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filter-buttons-m{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 94%;
+  margin: 0 auto;
+}
+.filter-button-m{
+  border: 1px solid gray;
+  margin: 5px;
+  padding: 6px;
+  cursor: pointer;
+  font-family: GoogleSans-Regular, serif;
+  border-radius: 3px;
+  font-size: calc(0.6rem + 0.1vw);
+  color: #444444;
+}
+.human{
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  border: 0;
+  flex-direction: column;
+  width: 250px;
+  height: 420px;
+  margin: 10px;
+}
+.ava{
+  width: 200px;
+  height: 200px;
+}
+.card-header{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  width: 100%;
+  font-family: GoogleSans-Regular, serif;
+  font-size: calc(0.95rem + 0.1vw);
+  color: #696969;
+}
+.name{
+  font-size: calc(1.7rem + 0.1vw);
+  color: #2f4f4f;
+  font-weight: 400;
+  text-align: center;
+  font-family: GoogleSans-Regular, serif;
+}
+.footer{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: GoogleSans-Regular, serif;
+  font-size: calc(0.9rem + 0.1vw);
+  color: #696969;
+}
+.bottom{
+  height: 50px;
+}
+.our-team{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.select-filter{
+  background-color: #efefef;
+}
+

@@ -1,0 +1,10 @@
+{ 
+	"build-args": " --base-href=\"/m/\"",
+	"ssh-ip": "192.168.1.16",
+	"ssh-user": "root",
+	"ssh-password": "Whatab0utus",
+	"ftp-ip": "192.168.1.16",
+	"ftp-user": "root",
+	"ftp-password": "Whatab0utus",
+	"ftp-path": "/var/www/html"
+}

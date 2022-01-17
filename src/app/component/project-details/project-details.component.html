@@ -1,0 +1,57 @@
+<div>
+  <div class="p-10">
+    <div class="cx cy pb-2 direction-column">
+      <div class="heading-ship mb-0">{{ship.getNameUpper()}}</div>
+      <div class="ship-text">{{ship.getDescNameUpper()}}</div>
+    </div>
+    <div class="cursor-pointer">
+      <video #video class="w-100" muted autoplay loop playsinline [src]="ship.video"></video>
+    </div>
+    <div class="cx cy pt-20">
+      <div class="mx-5 ship" *ngFor="let image of ship.images; let ind = index">
+        <img alt="Проект рыболовного траулера" title="Рыболовное судно" class="thumb-img" [src]="image.thumb" (click)="openImage(ship.images, ind)"/>
+      </div>
+    </div>
+    <div class="big-text">
+      <div class="cx cy px-10">КМ
+        <img height="18" src="assets/star.png">
+      </div>
+      <div class="px-10 cx cy" *ngFor="let mainProp of ship.mainProps">{{mainProp}}</div>
+    </div>
+    <div class="text-navigation cx cy mt-1 parameters title-string mx-5">
+      <div class="px-5 text-center py-10">{{t.translate('ДЛИНА')}}<br>{{ship.props[0]}}{{t.translate('м')}}</div>
+      <div class="px-5 text-center">{{t.translate('ШИРИНА')}}<br>{{ship.props[1]}}{{t.translate('м')}}</div>
+      <div class="px-5 text-center">{{t.translate('ОСАДКА')}}<br>{{ship.props[2]}}{{t.translate('м')}}</div>
+      <div class="px-5 text-center">{{t.translate('СКОРОСТЬ СУДНА')}}<br>{{ship.props[3]}}{{t.translate('уз')}}</div>
+      <div class="px-5 text-center">{{t.translate('ЭКИПАЖ')}}<br>{{ship.props[4]}}{{t.translate('чел')}}</div>
+    </div>
+    <div class="cx cy px-5">
+      <div class="desc-text mt-2">
+        <span [innerHTML]="ship.subDescription1"></span>
+        <span class="text-bold"> Enduro™ Bow</span>
+        <span [innerHTML]="ship.subDescription2"></span>
+      </div>
+    </div>
+    <div class="desc-text px-5 mt-1">
+      <div *ngFor="let details of ship.subDetails">
+        {{details}}<br>
+      </div>
+    </div>
+    <div class="desc-text mt-1 px-5">
+      <span class="text-bold">{{t.translate('Видами промысловых рыб являются:')}}</span>
+      {{ship.fishTypes}}
+    </div>
+    <div class="desc-text mt-1 px-5">
+      <span class="text-bold">{{t.translate('Виды и способы переработки:')}}</span>
+      {{ship.recycles}}
+    </div>
+    <div *ngIf="!['60', '20', '15'].includes(shipIndex)" class="cx cy mt-5 mb-3">
+      <div class="cx cy mx-1">
+        <a [href]="ship.bookletRU" target="_blank" class="button-booklet cursor-pointer cx cy">{{t.translate('Скачать буклет')}}<br>RU</a>
+      </div>
+      <div class="cx cy mx-1">
+        <a [href]="ship.bookletEN" target="_blank" class="button-booklet cursor-pointer cx cy">{{t.translate('Скачать буклет')}}<br>EN</a>
+      </div>
+    </div>
+  </div>
+</div>
