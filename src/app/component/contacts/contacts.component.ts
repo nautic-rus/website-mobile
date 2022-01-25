@@ -39,7 +39,7 @@ export class ContactsComponent implements OnInit {
     if (this.t.lang === 'RU'){
         this.employees[++counter] = new Employee('Артём', 'Стропилов', 'stropilov.jpg', 'stropilov@nautic-rus.ru', 'Генеральный Директор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Евгений', 'Воронин', 'voronin.jpg', 'voronin@nautic-rus.ru', 'Технический Директор', 'MANAGEMENT');
-        this.employees[++counter] = new Employee('Альфред', 'Тулиниус', 'alfred.jpg', ' atul@nautic.is', 'Главный Конструктор', 'MANAGEMENT');
+        // this.employees[++counter] = new Employee('Альфред', 'Тулиниус', 'alfred.jpg', ' atul@nautic.is', 'Главный Конструктор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Алексей', 'Тоболев', 'tobolev.jpg', 'tobolev@nautic-rus.ru', 'Финансовый Директор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Александр', 'Львов', 'lvov.jpg', 'lvov@nautic-rus.ru', 'Руководитель Проекта', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Никита', 'Новиков', 'nnovikov.jpg', 'n.novikov@nautic-rus.ru', 'Директор по качеству', 'MANAGEMENT');
@@ -96,14 +96,13 @@ export class ContactsComponent implements OnInit {
         this.employees[++counter] = new Employee('Максим', 'Зотиков', 'zotikov.jpg', 'zotikov@nautic-rus.ru', 'Системный отдел', 'PIPPING');
         this.employees[++counter] = new Employee('Сергей', 'Шабанов', 'shabanov.jpg', 'shabanov@nautic-rus.ru', 'Системный отдел', 'PIPPING');
         this.employees[++counter] = new Employee('Евгений', 'Воронков', 'voronkov.jpg', 'voronkov@nautic-rus.ru', 'Системный отдел', 'PIPPING');
-        this.employees[++counter] = new Employee('Александр', 'Поболь', 'pobol.jpg', 'pobol@nautic-rus.ru', 'Системный отдел', 'PIPPING');
         this.employees[++counter] = new Employee('Руслан', 'Савва', 'savva.jpg', 'savva@nautic-rus.ru', 'Системный отдел', 'PIPPING');
 
     }
     else {
       this.employees[++counter] = new Employee('Artem', 'Stropilov', 'stropilov.jpg', 'stropilov@nautic-rus.ru', 'General Director', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Evgenii', 'Voronin', 'voronin.jpg', 'voronin@nautic-rus.ru', 'Technical Director', 'MANAGEMENT');
-      this.employees[++counter] = new Employee('Alfreð', 'Tulinius', 'alfred.jpg', ' atul@nautic.is', 'Сhief Designer', 'MANAGEMENT');
+      // this.employees[++counter] = new Employee('Alfreð', 'Tulinius', 'alfred.jpg', ' atul@nautic.is', 'Сhief Designer', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Aleksei', 'Tobolev', 'tobolev.jpg', 'tobolev@nautic-rus.ru', 'Financial Director', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Aleksandr', 'Lvov', 'lvov.jpg', 'lvov@nautic-rus.ru', 'Project Manager', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Nikita', 'Novikov', 'nnovikov.jpg', 'n.novikov@nautic-rus.ru', 'Chief Quality Officer', 'MANAGEMENT');
@@ -160,7 +159,6 @@ export class ContactsComponent implements OnInit {
       this.employees[++counter] = new Employee('Maksim', 'Zotikov', 'zotikov.jpg', 'zotikov@nautic-rus.ru', 'Piping department', 'PIPPING');
       this.employees[++counter] = new Employee('Sergei', 'Shabanov', 'shabanov.jpg', 'shabanov@nautic-rus.ru', 'Piping department', 'PIPPING');
       this.employees[++counter] = new Employee('Evgenii', 'Voronkov', 'voronkov.jpg', 'voronkov@nautic-rus.ru', 'Piping department', 'PIPPING');
-      this.employees[++counter] = new Employee('Aleksandr', 'Pobol', 'pobol.jpg', 'pobol@nautic-rus.ru', 'Piping department', 'PIPPING');
       this.employees[++counter] = new Employee('Ruslan', 'Savva', 'savva.jpg', 'savva@nautic-rus.ru', 'Piping department', 'PIPPING');
     }
   }
