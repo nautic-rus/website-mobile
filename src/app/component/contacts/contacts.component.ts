@@ -39,7 +39,7 @@ export class ContactsComponent implements OnInit {
     if (this.t.lang === 'RU'){
         this.employees[++counter] = new Employee('Артём', 'Стропилов', 'stropilov.jpg', 'stropilov@nautic-rus.ru', 'Генеральный Директор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Евгений', 'Воронин', 'voronin.jpg', 'voronin@nautic-rus.ru', 'Технический Директор', 'MANAGEMENT');
-        this.employees[++counter] = new Employee('Вячеслав', 'Здюмаев', 'zdyumaev.jpg', ' zdyumaev@nautic.is', 'Главный Конструктор', 'MANAGEMENT');
+        this.employees[++counter] = new Employee('Вячеслав', 'Здюмаев', 'zdyumaev.jpg', ' zdyumaev@nautic-rus.ru', 'Главный Конструктор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Алексей', 'Тоболев', 'tobolev.jpg', 'tobolev@nautic-rus.ru', 'Финансовый Директор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Александр', 'Львов', 'lvov.jpg', 'lvov@nautic-rus.ru', 'Руководитель Проекта', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Никита', 'Новиков', 'nnovikov.jpg', 'n.novikov@nautic-rus.ru', 'Директор по качеству', 'MANAGEMENT');
@@ -107,7 +107,7 @@ export class ContactsComponent implements OnInit {
     else {
       this.employees[++counter] = new Employee('Artem', 'Stropilov', 'stropilov.jpg', 'stropilov@nautic-rus.ru', 'General Director', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Evgenii', 'Voronin', 'voronin.jpg', 'voronin@nautic-rus.ru', 'Technical Director', 'MANAGEMENT');
-      this.employees[++counter] = new Employee('Vyacheslav', 'Zdyumaev', 'zdyumaev.jpg', ' zdyumaev@nautic.is', 'Сhief Designer', 'MANAGEMENT');
+      this.employees[++counter] = new Employee('Vyacheslav', 'Zdyumaev', 'zdyumaev.jpg', ' zdyumaev@nautic-rus.ru', 'Сhief Designer', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Aleksei', 'Tobolev', 'tobolev.jpg', 'tobolev@nautic-rus.ru', 'Financial Director', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Aleksandr', 'Lvov', 'lvov.jpg', 'lvov@nautic-rus.ru', 'Project Manager', 'MANAGEMENT');
       this.employees[++counter] = new Employee('Nikita', 'Novikov', 'nnovikov.jpg', 'n.novikov@nautic-rus.ru', 'Chief Quality Officer', 'MANAGEMENT');
