@@ -45,7 +45,7 @@
       <span class="text-bold">{{t.translate('Виды и способы переработки:')}}</span>
       {{ship.recycles}}
     </div>
-    <div *ngIf="!['60', '20', '15'].includes(shipIndex)" class="cx cy mt-5 mb-3">
+    <div *ngIf="!['115', '60', '20', '15'].includes(shipIndex)" class="cx cy mt-5 mb-3">
       <div class="cx cy mx-1">
         <a [href]="ship.bookletRU" target="_blank" class="button-booklet cursor-pointer cx cy">{{t.translate('Скачать буклет')}}<br>RU</a>
       </div>

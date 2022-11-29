@@ -22,6 +22,17 @@ export class ShipManagerService {
   fillProjects(): void{
     let projectCounter = 0;
     if (this.t.lang === 'RU'){
+      this.projects[projectCounter] = new Project('ТРАУЛЕР 115м', 'Рыболовное судно', '115');
+      this.projects[projectCounter].description = 'Траулер 115м представляет собой большой морозильный рыболовный траулер-процессор, с возможностью промысла донным и пелагическим тралом, спроектированных для максимальной эффективности промысла.';
+      this.projects[projectCounter].mainProps = ['ICE3 (HULL)', 'FISHING VESSEL'];
+      this.projects[projectCounter].props = ['115.00', '22.00', '8', '14', '99'];
+      this.projects[projectCounter].subDescription1 = '<span class="text-bold">ТРАУЛЕР</span> представляет собой большой морозильный рыболовный траулер-процессор, спроектированный для максимальной эффективности промысла. Конструкция основывается на устоявшейся и проверенной концепции носовой части';
+      this.projects[projectCounter].subDescription2 = ', которая обеспечивает наилучшую мореходность судна в суровых морях. Данная форма носовой части также позволяет полностью использовать размер судна на благо экипажа и максимальной вместимости рыбного трюма и судна в целом.';
+      this.projects[projectCounter].subDetails = ['Общая мощность переработки на судне ~ 200 т/день.', 'Производительность заморозки на судне ~ 200 т/день.', 'Общая вместимость трюмов ~ 2005м³.'];
+      this.projects[projectCounter].fishTypes = 'треска, минтай, окунь, палтус, сельдь, скумбрия, сардина, кальмар и другие виды рыб.';
+      this.projects[projectCounter].recycles = 'замороженное филе, фарш, икра, молока, субпродукты, рыбная мука и жир.';
+
+      projectCounter += 1;
       this.projects[projectCounter] = new Project('ТРАУЛЕР 87м', 'Рыболовное судно', '87');
       this.projects[projectCounter].description = 'Траулер 87м представляет собой большой морозильный рыболовный траулер-процессор, с возможностью лова донным и пелагическим тралом, спроектированный для максимальной эффективности промысла.';
       this.projects[projectCounter].mainProps = ['ICE3 (HULL)', 'FISHING VESSEL'];
@@ -110,17 +121,6 @@ export class ShipManagerService {
       this.projects[projectCounter].recycles = 'охлаждение рыбы для последующей переработки на берегу.';
 
       projectCounter += 1;
-      this.projects[projectCounter] = new Project('ЯРУСОЛОВ 15м', 'Рыболовное судно прибрежного промысла', '15');
-      this.projects[projectCounter].description = 'Серия Ярусолов 15м - это универсальное многоцелевое рыболовное судно, предназначенное для прибрежного лова на различных глубинах и разных методов рыбной ловли.';
-      this.projects[projectCounter].mainProps = ['ICE2 (HULL)', 'ICE1 (MACHINERY)', 'R2-RSN', 'AUT1', 'FISHING VESSEL'];
-      this.projects[projectCounter].props = ['15.00', '6.00', '3.25', '10', '8'];
-      this.projects[projectCounter].subDescription1 = 'Серия <span class="text-bold">ЯРУСОЛОВ 15м</span> - это универсальное многоцелевое рыболовное судно, предназначенное для прибрежного лова на различных глубинах и разных методов рыбной ловли. Благодаря вариации концепции ';
-      this.projects[projectCounter].subDescription2 = 'обеспечивающей максимально возможную длину ватерлинии, а также увеличенную ширину корпуса, на судне достигается увеличенный объем и соответствующая плавучесть корпуса. Эти функции обеспечивают хорошее поведение судна и улучшенную рабочую среду для экипажа.';
-      this.projects[projectCounter].subDetails = ['Вместимость рыбного трюма ~ 50м³.'];
-      this.projects[projectCounter].fishTypes = 'треска, минтай, пикша, камбала, окунь, сельдь, скумбрия, кальмар, и другие виды рыб.';
-      this.projects[projectCounter].recycles = 'охлаждение рыбы для последующей переработки на берегу.';
-
-      projectCounter += 1;
       this.projects[projectCounter] = new Project ('Engey RE 1 (Кильдин)', '', '7');
       this.projects[projectCounter].description = 'Fresh fish trawler. Designed for HB Grandi ltd. Delivered 2016.';
 
@@ -145,6 +145,17 @@ export class ShipManagerService {
       this.projects[projectCounter].description = 'Fresh fish trawler. Designed for HB Grandi ltd. Delivered 2017.';
     }
     else {
+      this.projects[projectCounter] = new Project('Trawler 115m', 'Fishing Vessel', '115');
+      this.projects[projectCounter].description = 'Trawler 115m big freezing processing trawler with a possibility of fish catching with bottom and pelagic trawl, designed for maximum fishing efficiency.';
+      this.projects[projectCounter].mainProps = ['ICE3 (HULL)', 'FISHING VESSEL'];
+      this.projects[projectCounter].props = ['115.00', '22.00', '8', '14', '99'];
+      this.projects[projectCounter].subDescription1 = '<span class="text-bold">TRAWLER </span>big freezing processing trawler with a possibility of fish catching with bottom and pelagic trawl, designed for maximum fishing efficiency. The design based on the well-established and proven ';
+      this.projects[projectCounter].subDescription2 = ' concept for the best seaworthiness in rough seas. This bow shape also allows full use of  size of the vessel for the benefit of the crew and the maximum capacity of the fish hold and the vessel as a whole.';
+      this.projects[projectCounter].subDetails = ['Total processing capacity on the ship ~ 200t / day. ', 'Freezing capacity ~ 200t / day.', 'Total capacity of holds ~ 2005m³.'];
+      this.projects[projectCounter].fishTypes = 'cod, pollock, red fish, halibut, herring, mackerel, sardines, squid and other types of fish.';
+      this.projects[projectCounter].recycles = 'frozen blocks of fillets, mince, roe, milt, offal, fish meal and fish oil.';
+
+      projectCounter += 1;
       this.projects[projectCounter] = new Project('Trawler 87m', 'Fishing Vessel', '87');
       this.projects[projectCounter].description = 'Trawler 87m big freezing processing trawler with a possibility of fish catching with bottom and pelagic trawl, designed for maximum fishing efficiency.';
       this.projects[projectCounter].mainProps = ['ICE3 (HULL)', 'FISHING VESSEL'];
@@ -233,18 +244,7 @@ export class ShipManagerService {
       this.projects[projectCounter].recycles = 'cooling of fish for further processing onshore.';
 
       projectCounter += 1;
-      this.projects[projectCounter] = new Project('Longliner 15m', 'Fishing Inshore Vessel', '15');
-      this.projects[projectCounter].description = 'Series Longliner 15m is a highly versatile multipurpose fishing vessel, designed for coastal fishing at various depths and fishing methods.';
-      this.projects[projectCounter].mainProps = ['ICE2 (HULL)', 'ICE1 (MACHINERY)', 'R2-RSN', 'AUT1', 'FISHING VESSEL'];
-      this.projects[projectCounter].props = ['15.00', '6.00', '3.25', '10', '8'];
-      this.projects[projectCounter].subDescription1 = 'Series <span class="text-bold">Longliner 15m</span> is a highly versatile multipurpose fishing vessel, designed for coastal fishing at various depths and fishing methods. With a variation feature to the ';
-      this.projects[projectCounter].subDescription2 = 'concept to ensure the longest possible waterline, along with excessive width of the hull, increased volume is obtained in the vessel and corresponding buoyancy of the hull. These features secure good performance of the vessel and improved working environment for the crew.';
-      this.projects[projectCounter].subDetails = ['Fish hold capacity ~ 50м³.'];
-      this.projects[projectCounter].fishTypes = 'cod, pollock, haddock, flatfish, red fish, halibut, macrourus and other types of fish.';
-      this.projects[projectCounter].recycles = 'cooling of fish for further processing onshore.';
-
-      projectCounter += 1;
-      this.projects[projectCounter] = new Project ('Engey RE 1 (Кильдин)', '', '7');
+      this.projects[projectCounter] = new Project ('Engey RE 1 (KILDIN)', '', '7');
       this.projects[projectCounter].description = 'Fresh fish trawler. Designed for HB Grandi ltd. Delivered 2016.';
 
       projectCounter += 1;
