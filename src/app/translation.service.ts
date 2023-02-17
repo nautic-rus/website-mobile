@@ -117,6 +117,18 @@ export class TranslationService {
           case 'Реклассификация судов или смена класса судна – это процедура технической экспертизы и освидетельствования судна с целью замены (выдачи) судовых классификационных свидетельств, выданных ранее старым классификационным обществом, на классификационные свидетельства, выдаваемые новым классификационным обществом.': return 'Ship reclassification or ship class change is a procedure of technical expertise and inspection aimed to change or issue old registry certificates for the new ones. ';
           case 'Модернизация и переоборудование судов': return 'Ship upgrading and reequipment ';
           case 'Модернизация - совокупность операций по изменению конструкции судна (элемента судна) с целью улучшения технико-эксплуатационных характеристик, условий труда и быта, а также выполнения требований Международных конвенций.': return 'Upgrading is a measure aimed at ship construction or element changing. This measure is taken to improve technical characteristics, work and life conditions, and International conventions requirements fulfillment. ';
+          case '- Главный конструктор/заместитель (проектирование, судостроение)': return '- Chief Designer/Deputy (design, shipbuilding)';
+          case '- Инженер-расчетчик корпус (Судостроение)': return '- Calculation Engineer corps (Shipbuilding)';
+          case '- Инженер-конструктор отдела судовых устройств': return '- Design Engineer of the Marine Devices Department';
+          case '- Инженер-конструктор судовых систем и систем энергетических установок (Судостроение)': return '- Engineer-designer of ship systems and power plant systems (Shipbuilding)';
+          case 'Вы можете отправить нам резюме по адресу ': return 'You can send us your resume at ';
+          case '': return '';
+          case '': return '';
+          case '': return '';
+          case '': return '';
+          case '': return '';
+          case '': return '';
+          case '': return '';
           default: return value;
         }
       }

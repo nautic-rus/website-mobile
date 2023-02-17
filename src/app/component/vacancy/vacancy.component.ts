@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslationService} from "../../translation.service";
 
 @Component({
   selector: 'app-vacancy',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VacancyComponent implements OnInit {
 
-  constructor() { }
+  constructor(public t: TranslationService) { }
 
   ngOnInit(): void {
   }
