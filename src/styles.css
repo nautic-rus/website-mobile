@@ -127,10 +127,11 @@ body,p{
   margin-bottom: 0.1rem;
 }
 .mini-heading{
-  font-size: calc(1rem + 0.1vw);
+  font-size: 1rem;
   font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: GoogleSans-Regular, serif;
-  text-align: center;
   color: #212529;
 }
 .mini-text{

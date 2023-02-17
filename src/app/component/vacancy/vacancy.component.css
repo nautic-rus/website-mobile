@@ -1,6 +1,7 @@
 .content{
   margin: 0 auto;
-  width: 60%;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: NotoSans-Regular, serif;
   text-align: justify;
   text-indent: 30px;

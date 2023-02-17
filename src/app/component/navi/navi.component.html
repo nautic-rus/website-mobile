@@ -11,6 +11,7 @@
     <div (click)="toggleMenu()" [routerLink]="['/services']" class="text-navi padding cursor-pointer">{{t.translate('УСЛУГИ')}}</div>
     <div (click)="toggleMenu()" [routerLink]="['/certs']" class="text-navi padding cursor-pointer">{{t.translate('СЕРТИФИКАТЫ')}}</div>
     <div (click)="toggleMenu()" [routerLink]="['/contacts']" class="text-navi padding cursor-pointer">{{t.translate('КОНТАКТЫ')}}</div>
+    <div (click)="toggleMenu()" [routerLink]="['/vacancy']" class="text-navi padding cursor-pointer">{{t.translate('ВАКАНСИИ')}}</div>
     <div class="text-navi padding cursor-pointer" (click)="switchLang();">{{this.t.lang}}</div>
     <div class="close-menu" (click)="toggleMenu()">
       <fa-icon class="fa-times-icon" [icon]="faTimes"></fa-icon>

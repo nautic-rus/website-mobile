@@ -57,6 +57,7 @@ export class TranslationService {
           case 'ПРОЕКТЫ': return 'PROJECTS';
           case 'ДИЗАЙН': return 'DESIGN';
           case 'УСЛУГИ': return 'SERVICES';
+          case 'ВАКАНСИИ': return 'VACANCY';
           case 'СЕРТИФИКАТЫ': return 'CERTIFICATES';
           case 'КОНТАКТЫ': return 'CONTACT';
           case 'Главная': return 'About us';
@@ -83,7 +84,7 @@ export class TranslationService {
           case 'Видами промысловых рыб являются:': return 'Fish species:';
           case 'Виды и способы переработки:': return 'Methods and types of processing:';
           case 'Скачать буклет': return 'Download booklet';
-          case 'Санкт-Петербург, ул. Кронштадтская, дом 9, корпус 4, стр 1, офис 303': return 'Office 303, 9/4 Kronshtadtskaya str. build.1, St. Petersburg, Russia, 198096';
+          case 'Санкт-Петербург, ул. Кронштадтская, дом 9, корпус 4, стр 1, офис 701': return 'Office 701, 9/4 Kronshtadtskaya str. build.1, St. Petersburg, Russia, 198096';
           case 'Свидетельство о соответствии предприятия. Документ, подтверждающий, что оказываемые предприятием услуги соответствуют требованиями Регистра Судоходства.': return 'The main document issued by the Russian Maritime Register of Shipping is a Type Approval Certificate. The type approval certificate is a document certifying that the properties, parameters and characteristics of the type material or product issued by the manufacturer comply with the requirements of the rules of the Russian Maritime Register of Shipping for use on vessels and objects of a technical supervision for the intended purpose. A type approval certificate is required for companies that manufacture the products used in the maritime sphere, shipping and working on seas and rivers.';
           case 'Эти суда спроектированы нашими партнёрами из Исландии': return 'These vessels are designed by our Icelandic partners';
           case 'Будущее за синтезом технологий и дизайна': return 'The future lies in the synthesis of technology and design.';
