@@ -37,7 +37,7 @@ export class ContactsComponent implements OnInit {
   fillEmployees(): void{
     let counter = -1;
     if (this.t.lang === 'RU'){
-        this.employees[++counter] = new Employee('Альфред', 'Тулиниус', 'alfred.jpg', 'atul@nautic-rus.ru', 'Генеральный Директор', 'MANAGEMENT');
+        this.employees[++counter] = new Employee('Алфред', 'Тулиниус', 'alfred.jpg', 'atul@nautic-rus.ru', 'Генеральный Директор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Артём', 'Стропилов', 'stropilov.jpg', 'stropilov@nautic-rus.ru', 'Директор по проектам', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Евгений', 'Воронин', 'voronin.jpg', 'voronin@nautic-rus.ru', 'Технический Директор', 'MANAGEMENT');
         this.employees[++counter] = new Employee('Алексей', 'Тоболев', 'tobolev.jpg', 'tobolev@nautic-rus.ru', 'Финансовый Директор', 'MANAGEMENT,FINANCE');
