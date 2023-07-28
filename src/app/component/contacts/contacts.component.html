@@ -7,7 +7,7 @@
   <div class="mini-text">office@nautic-rus.ru</div>
   <div class="mini-text pb-2">{{t.translate('Санкт-Петербург, ул. Кронштадтская, дом 9, корпус 4, стр 1, офис 701')}}</div>
   <div class="color-line"></div>
-  <div class="mini-heading our-team">{{t.translate('Наша команда')}}</div>
+  <div class="mini-heading our-team cx">{{t.translate('Наша команда')}}</div>
   <div class="filter-buttons-m cx cy">
     <div class="filter-button-m" [class.select-filter]="selectedFilter == dep" *ngFor="let dep of departments" (click)="selectFilter(dep)">{{t.translate(dep).toUpperCase()}}</div>
   </div>

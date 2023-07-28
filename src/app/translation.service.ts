@@ -122,13 +122,6 @@ export class TranslationService {
           case '- Инженер-конструктор отдела судовых устройств': return '- Design Engineer of the Marine Devices Department';
           case '- Инженер-конструктор судовых систем и систем энергетических установок (Судостроение)': return '- Engineer-designer of ship systems and power plant systems (Shipbuilding)';
           case 'Вы можете отправить нам резюме по адресу ': return 'You can send us your resume at ';
-          case '': return '';
-          case '': return '';
-          case '': return '';
-          case '': return '';
-          case '': return '';
-          case '': return '';
-          case '': return '';
           default: return value;
         }
       }
