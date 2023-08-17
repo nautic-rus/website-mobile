@@ -8,7 +8,7 @@ import {TranslationService} from '../../translation.service';
   styleUrls: ['./certs.component.css']
 })
 export class CertsComponent implements OnInit {
-  certUrl = 'assets/certs/rusregistercert.png';
+  certUrl = 'assets/certs/rusregistercert1.png';
   constructor(private lb: Lightbox, public t: TranslationService) { }
 
   ngOnInit(): void {
