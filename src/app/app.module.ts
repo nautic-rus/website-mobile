@@ -23,6 +23,13 @@ import { ServicesComponent } from './component/services/services.component';
 import {NgxCollapseModule} from 'ngx-collapse';
 import { BirthdayComponent } from './component/birthday/birthday.component';
 import { Newyear2022Component } from './component/newyear2022/newyear2022.component';
+import { VacancyDetailsComponent } from './component/vacancy/vacancy-details/vacancy-details.component';
+import { SendResumeComponent } from './component/send-resume/send-resume.component';
+import {DialogModule} from 'primeng/dialog';
+import {DialogService} from "primeng/dynamicdialog";
+import {InputTextModule} from "primeng/inputtext";
+import {ReactiveFormsModule} from "@angular/forms";
+import {InputMaskModule} from "primeng/inputmask";
 
 @NgModule({
   declarations: [
@@ -41,9 +48,11 @@ import { Newyear2022Component } from './component/newyear2022/newyear2022.compon
     ServicesComponent,
     BirthdayComponent,
     Newyear2022Component,
+    VacancyDetailsComponent,
+    SendResumeComponent,
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({appId: 'serverApp'}),
     AppRoutingModule,
     LightboxModule,
     ParallaxModule,
@@ -53,8 +62,14 @@ import { Newyear2022Component } from './component/newyear2022/newyear2022.compon
     FontAwesomeModule,
     HammerModule,
     NgxCollapseModule,
+    DialogModule,
+    InputTextModule,
+    ReactiveFormsModule,
+    InputMaskModule,
   ],
-  providers: [],
+  providers: [
+    DialogService,
+  ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -12,6 +12,7 @@ import {ModelComponent} from './component/model/model.component';
 import {ServicesComponent} from './component/services/services.component';
 import {BirthdayComponent} from './component/birthday/birthday.component';
 import {Newyear2022Component} from './component/newyear2022/newyear2022.component';
+import {VacancyDetailsComponent} from "./component/vacancy/vacancy-details/vacancy-details.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent, data: {animation: 'HomeComponent'} },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'model', component: ModelComponent, data: {animation: 'ModelComponent'} },
   { path: 'birthday', component: BirthdayComponent, data: {animation: 'BirthdayComponent'} },
   { path: 'newyear2022', component: Newyear2022Component, data: {animation: 'Newyear2022Component'} },
+  { path: 'vacancy-details', component: VacancyDetailsComponent, data: {animation: 'VacancyDetailsComponent'} },
 ];
 
 @NgModule({

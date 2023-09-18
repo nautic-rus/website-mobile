@@ -10,9 +10,6 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
-.direction-column{
-  flex-direction: column;
-}
 .px-10{
   padding-left: 10px;
   padding-right: 10px;

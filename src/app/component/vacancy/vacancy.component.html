@@ -1,38 +1,24 @@
-<div class="cx cy">
-  <div class="heading-text">{{t.translate('Вакансии')}}</div>
+<div class="cx cy mt-30">
+  <h1 class="heading-text mt-30">{{t.translate('Вакансии')}}</h1>
 </div>
 <div class="color-line"></div>
-<div class="mini-heading pt-2">{{t.translate('- Главный конструктор/заместитель (проектирование, судостроение)')}}</div>
-<div class="mini-heading pt-2">{{t.translate('- Инженер-расчетчик корпус (Судостроение)')}}</div>
-<div class="mini-heading pt-2">{{t.translate('- Инженер-конструктор отдела судовых устройств')}}</div>
-<div class="mini-heading pt-2">{{t.translate('- Инженер-конструктор судовых систем и систем энергетических установок (Судостроение)')}}</div>
-<div class="content pt-20">
+<div class="content pt-30">
+  <div class="vac cursor-pointer" *ngFor="let vacancy of vacancies; let i = index">
+    <div class="card-vac w-100" (click)="openVacancy(i)">
+      <div class="vac-name cy pb-15">{{vacancy.name}}</div>
+      <!--      <div class="vac-salary pb-15">{{vacancy.salary}}</div>-->
+      <div class="vac-exp">{{vacancy.experience}}</div>
+      <div class="vac-location df mb-10">
+        <div class="mr-15">{{vacancy.city}}</div>
+        <div *ngIf="vacancy.metro == 'Автово' || vacancy.metro == 'Avtovo'" class="red-point mt-5px"></div>
+        <div *ngIf="vacancy.metro == 'Рыбацкое' || vacancy.metro == 'Rybatskoe'" class="green-point mt-5px"></div>
+        <div class="ml-5">{{vacancy.metro}}</div>
+      </div>
+      <div class="content-end">
+        <div class="button-vac cx cy cursor-pointer mr-10 pos-goto" (click)="openVacancy(i)">{{t.translate('Перейти')}}</div>
+      </div>
+    </div>
 
-
-<!--  <div class="text-bold heading">Условия работы:</div>-->
-<!--  <div>— График работы 5/2.</div>-->
-<!--  <div>— Трудоустройство по Трудовому Кодексу, «белая» заработная плата.</div>-->
-<!--  <div>— Оплачиваемый отпуск 28 календарных дней, ДМС.</div>-->
-<!--  <div>— Комфортный офис рядом с м. Автово.</div>-->
-<!--  <div>— Гибкий график работы.</div>-->
-
-<!--  <div class="text-bold heading">Обязанности:</div>-->
-<!--  <div>— Ведение нескольких проектов рыболовных судов;</div>-->
-<!--  <div>— Глубокое понимание работы рыбопромысловых судов;</div>-->
-<!--  <div>— Современный подход к проектированию;</div>-->
-<!--  <div>— Разработка и контроль общепроектной документации совместно с отделами КБ;</div>-->
-<!--  <div>— Принятие и согласование принципиальных решений;</div>-->
-<!--  <div>— Взаимодействие с РМРС и судостроительными заводами.</div>-->
-
-
-<!--  <div class="text-bold heading">Требования:</div>-->
-<!--  <div>— Высшее техническое образование (судостроение);</div>-->
-<!--  <div>— Опыт работы на рыбопромысловых судах;</div>-->
-<!--  <div>— Опыт работы в конструкторских организациях на руководящих должностях;</div>-->
-<!--  <div>— Знание Правил РМРС, Международных Конвенций, технологий и производственных процессов судостроения;</div>-->
-<!--  <div>— Знание английского языка.</div>-->
-
-  <div class="bottom">{{t.translate('Вы можете отправить нам резюме по адресу ')}}<b>office@nautic-rus.ru</b></div>
-
+  </div>
 </div>
 
