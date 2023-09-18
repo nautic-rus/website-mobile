@@ -1,0 +1,65 @@
+* {
+  overflow: hidden;
+}
+/deep/.p-dialog .p-dialog-content {
+  border-radius: 5px;
+  padding: 0;
+}
+.ovf-auto{
+  overflow: auto!important;
+}
+.card-header{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0;
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  width: 100%;
+  font-family: GoogleSans-Regular, Arial, Helvetica, sans-serif;
+  font-size: calc(0.9rem + 0.1vw);
+  color: #696969;
+}
+.mini-text-res{
+  font-family: GoogleSans-Regular, Arial, Helvetica, sans-serif;
+  color: #2f4f4f;
+  font-size: 12px;
+}
+/deep/input.p-inputmask.p-inputtext.p-component{
+  width: 100%;
+}
+.upload{
+  height: 80px;
+  border: 1px dashed #ccc;
+  cursor: pointer;
+  padding: 10px;
+}
+.normal-text{
+  color: #5e6c84;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 400;
+}
+.button-vac{
+  background-color: #6BCBDB;
+  width: fit-content;
+  min-width: 100px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: calc(0.75rem + 0.1vw);
+  font-weight: 500;
+  color: white;
+}
+.button-vac:hover{
+  background-color: #63bccb;
+}
+.button-send-abs{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.pos-close{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}

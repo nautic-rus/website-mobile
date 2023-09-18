@@ -26,10 +26,11 @@ import { Newyear2022Component } from './component/newyear2022/newyear2022.compon
 import { VacancyDetailsComponent } from './component/vacancy/vacancy-details/vacancy-details.component';
 import { SendResumeComponent } from './component/send-resume/send-resume.component';
 import {DialogModule} from 'primeng/dialog';
-import {DialogService} from "primeng/dynamicdialog";
-import {InputTextModule} from "primeng/inputtext";
-import {ReactiveFormsModule} from "@angular/forms";
-import {InputMaskModule} from "primeng/inputmask";
+import {DialogService} from 'primeng/dynamicdialog';
+import {InputTextModule} from 'primeng/inputtext';
+import {ReactiveFormsModule} from '@angular/forms';
+import {InputMaskModule} from 'primeng/inputmask';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import {InputMaskModule} from "primeng/inputmask";
     InputTextModule,
     ReactiveFormsModule,
     InputMaskModule,
+    HttpClientModule,
   ],
   providers: [
     DialogService,

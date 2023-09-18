@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  http: 'https://nautic-rus.com/rest/'
 };

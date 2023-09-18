@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  http: 'http://localhost:4200/api/'
+  http1: 'http://localhost:4200/api/',
+  http: 'https://nautic-rus.com/rest/'
 };
 
 /*

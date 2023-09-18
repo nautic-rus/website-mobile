@@ -1,5 +1,5 @@
-<div class="pos-r" style="height: 620px; width: 350px;">
-  <div class="card-header cx cy pos-r">
+<div class="pos-r" style="height: auto; width: 80vw;">
+  <div class="card-header cxy pos-r">
     <div>
       {{t.translate('Напишите нам')}}
     </div>
@@ -30,7 +30,7 @@
         <div class="cx cy w-100 mb-10">
           <img class="no-actions w-100" src="assets/upload.svg" height="28">
         </div>
-        <span class="normal-text w-100 cx cy text-center no-actions">{{t.translate('Перетащите файлы или нажмите для загрузки')}}</span>
+        <span class="normal-text w-100 cx cy text-center no-actions">{{t.translate('Нажмите для загрузки файла')}}</span>
       </div>
       <input hidden #selectFiles type="file" (change)="handleFileInput(selectFiles.files)" multiple>
       <div class="h-60px ovf-auto">

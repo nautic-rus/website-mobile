@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {TranslationService} from '../../translation.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {DynamicDialogRef} from 'primeng/dynamicdialog';
+import {DynamicDialogConfig, DynamicDialogRef} from 'primeng/dynamicdialog';
 import {Vacancy} from './vacancy';
 import {HttpClient} from '@angular/common/http';
 import {environment} from '../../../environments/environment';
@@ -23,7 +23,9 @@ export class SendResumeComponent implements OnInit {
   awaitForLoad: string[] = [];
   vacancyName = '';
 
-  constructor(public t: TranslationService, public ref: DynamicDialogRef, public http: HttpClient) { }
+  constructor(public t: TranslationService, public ref: DynamicDialogRef, public http: HttpClient, public conf: DynamicDialogConfig) {
+    this.vacancyName = conf.data;
+  }
 
   ngOnInit(): void {
   }
@@ -65,10 +67,9 @@ export class SendResumeComponent implements OnInit {
         const file = files.item(x);
         if (file != null){
           const formData: FormData = new FormData();
-          formData.append('file', file, file.name);
+          formData.append('file', file, encodeURI(file.name));
           this.http.post<string>(environment.http + 'uploads/file', formData).subscribe(res => {
-            console.log(res);
-            this.loaded.push(res);
+            this.loaded.push(decodeURI(res));
           });
         }
       }
@@ -77,7 +78,7 @@ export class SendResumeComponent implements OnInit {
 
   getFileName(file: string): string {
     const split = file.split('/');
-    return split[split.length - 1];
+    return decodeURI(split[split.length - 1]);
   }
 
   close() {
