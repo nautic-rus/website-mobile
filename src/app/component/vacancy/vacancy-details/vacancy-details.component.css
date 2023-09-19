@@ -13,6 +13,8 @@
   width: 94%;
   font-family: GoogleSans-Regular, Arial, Helvetica, sans-serif;
   text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .button-v{
   border: 1px solid #dedede;
