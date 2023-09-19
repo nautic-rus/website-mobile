@@ -2,40 +2,40 @@
   <div class="text-center py-1">
     <div class="heading-text-vac">{{vacancy.getNameUpper()}}</div>
   </div>
-  <div class="sal-font mt-10">{{vacancy.salary}}</div>
+  <div class="sal-font mt-10 pl-30">{{vacancy.salary}}</div>
   <div class="df mt-10">
-    <div class="mb-5px">{{t.translate('Требуемый опыт работы:')}}</div>
+    <div class="mb-5px pl-30">{{t.translate('Требуемый опыт работы:')}}</div>
     <div class="indent-none ml-5">{{vacancy.experience}}</div>
   </div>
-  <div class="">{{t.translate('Полная занятость, гибкий график')}}</div>
+  <div class="pl-30">{{t.translate('Полная занятость, гибкий график')}}</div>
 
-  <div class="text-bold mt-10">{{t.translate('Обязанности:')}}</div>
+  <div class="text-bold mt-10 pl-30">{{t.translate('Обязанности:')}}</div>
   <div *ngFor="let resp of vacancy.responsibilities">
-    <div class="mb-5px">{{resp}}</div>
+    <div class="mb-5px pl-30">{{resp}}</div>
   </div>
-  <div  class="text-bold mt-10">{{t.translate('Требования:')}}</div>
+  <div  class="text-bold mt-10 pl-30">{{t.translate('Требования:')}}</div>
   <div *ngFor="let req of vacancy.requirements">
-    <div class="mb-5px">{{req}}</div>
+    <div class="mb-5px pl-30">{{req}}</div>
   </div>
-  <div class="text-bold mt-10">{{t.translate('Условия работы:')}}</div>
+  <div class="text-bold mt-10 pl-30">{{t.translate('Условия работы:')}}</div>
   <div *ngFor="let cond of vacancy.conditions">
-    <div class="mb-5px">{{cond}}</div>
+    <div class="mb-5px pl-30">{{cond}}</div>
   </div>
   <div class="">
-    <div class="">{{vacancy.office}}</div>
-    <div class="df">
-      <div *ngIf="vacancy.metro == 'м. Автово.' || vacancy.metro == 'Avtovo metro station.'" class="red-point mt-7px ml-10"></div>
-      <div *ngIf="vacancy.metro == 'м. Рыбацкое.' || vacancy.metro == 'Rybatskoe metro station.'" class="green-point mt-7px ml-10"></div>
+    <div class="pl-30">{{vacancy.office}}</div>
+    <div class="df pl-30">
+      <div *ngIf="vacancy.metro == 'м. Автово.' || vacancy.metro == 'Avtovo metro station.'" class="red-point mt-7px"></div>
+      <div *ngIf="vacancy.metro == 'м. Рыбацкое.' || vacancy.metro == 'Rybatskoe metro station.'" class="green-point mt-7px"></div>
       <div class="ml-5 indent-none">{{vacancy.metro}}</div>
     </div>
   </div>
-  <div class="cx cy mt-10 mb-10">
-    <div class="button-v cursor-pointer indent-none" (click)="show()">{{t.translate('Отправить резюме')}}</div>
+  <div class="cx cy mt-30 mb-30">
+    <div class="button-send cx cy cursor-pointer mr-10 pos-goto" (click)="show()">{{t.translate('Отправить резюме')}}</div>
   </div>
-  <div *ngIf="vacancy.metro == 'м. Автово.' || vacancy.metro == 'Avtovo metro station.'" class="cx cy mt-10">
+  <div *ngIf="vacancy.metro == 'м. Автово.' || vacancy.metro == 'Avtovo metro station.'" class="cx cy mt-10 mb-10">
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A07b54a317e13373dcac37a05f3d197682a12d754ff0d13be81fdbb7d9a92e1d3&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
   </div>
-  <div *ngIf="vacancy.metro == 'м. Рыбацкое.' || vacancy.metro == 'Rybatskoe metro station.'" class="cx cy mt-10">
+  <div *ngIf="vacancy.metro == 'м. Рыбацкое.' || vacancy.metro == 'Rybatskoe metro station.'" class="cx cy mt-10 mb-">
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A20251fe26e0b843c3a63020f40bfc2de03f75f6cdbcbad83eb15b713e49c45c5&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
   </div>
 </div>

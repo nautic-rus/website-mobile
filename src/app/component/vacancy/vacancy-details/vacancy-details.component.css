@@ -13,7 +13,6 @@
   width: 94%;
   font-family: GoogleSans-Regular, Arial, Helvetica, sans-serif;
   text-align: justify;
-  text-indent: 30px;
 }
 .button-v{
   border: 1px solid #dedede;
@@ -49,4 +48,17 @@
   width: 6px;
   height: 6px;
   border-radius: 10px;
+}
+.button-send{
+  background-color: #6BCBDB;
+  width: fit-content;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: calc(0.75rem + 0.1vw);
+  font-weight: 500;
+  color: white;
+}
+.button-send:hover{
+  background-color: #63bccb;
 }
