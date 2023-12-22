@@ -9,19 +9,18 @@ export class TranslationService {
   lang = 'RU';
   event = new EventEmitter();
   constructor(private cookie: CookieService, public route: ActivatedRoute) {
-    if (this.cookie.check('lang')){
-      this.lang = this.cookie.get('lang') === 'RU' ? 'RU' : 'EN';
-    }
-    else{
-      this.route.queryParams.subscribe(params => {
-        if (params.lang != null && (params.lang == 'ru' || params.lang == 'en')){
-          this.lang = params.lang.toUpperCase();
+    this.route.queryParams.subscribe(params => {
+      if (params.lang != null && (params.lang == 'ru' || params.lang == 'en')){
+        this.lang = params.lang.toUpperCase();
+        this.setLang(this.lang);
+      }
+      else{
+        if (this.cookie.check('lang')){
+          this.lang = this.cookie.get('lang') === 'RU' ? 'RU' : 'EN';
+          this.setLang(this.lang);
         }
-        else{
-          this.lang = 'RU';
-        }
-      });
-    }
+      }
+    });
     //this.setLang(this.lang);
   }
   setLang(lang: string): void {
