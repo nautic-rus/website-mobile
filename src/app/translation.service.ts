@@ -1,5 +1,6 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import {CookieService} from 'ngx-cookie-service';
+import {ActivatedRoute} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
@@ -7,18 +8,19 @@ import {CookieService} from 'ngx-cookie-service';
 export class TranslationService {
   lang = 'RU';
   event = new EventEmitter();
-  constructor(private cookie: CookieService) {
+  constructor(private cookie: CookieService, public route: ActivatedRoute) {
     if (this.cookie.check('lang')){
       this.lang = this.cookie.get('lang') === 'RU' ? 'RU' : 'EN';
     }
     else{
-      if (navigator.language === 'ru-RU'){
-        this.lang = 'RU';
-      }
-      else
-      {
-        this.lang = 'EN';
-      }
+      this.route.queryParams.subscribe(params => {
+        if (params.lang != null && (params.lang == 'RU' || params.lang == 'EN')){
+          this.lang = params.lang;
+        }
+        else{
+          this.lang = 'RU';
+        }
+      });
     }
     this.setLang(this.lang);
   }
